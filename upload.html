@@ -1,0 +1,149 @@
+   <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Selection Form</title>
+   <style>
+     body {
+       font-family: Arial, sans-serif;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+       margin: 0;
+       background-color: #f4f4f4;
+     }
+     .container {
+       max-width: 500px;
+       width: 100%;
+       padding: 20px;
+       background: #fff;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+       border-radius: 8px;
+     }
+     .section {
+       margin-bottom: 20px;
+     }
+     label {
+       font-weight: bold;
+       display: block;
+       margin-bottom: 8px;
+     }
+     select, input[type="file"] {
+       width: 100%;
+       padding: 8px;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       font-size: 1em;
+     }
+     button {
+       width: 100%;
+       padding: 10px;
+       background-color: #4CAF50;
+       color: white;
+       font-size: 1em;
+       border: none;
+       border-radius: 4px;
+       cursor: pointer;
+     }
+     button:hover {
+       background-color: #45a049;
+     }
+     .loading {
+       display: none;
+       text-align: center;
+       font-size: 1.2em;
+       color: #4CAF50;
+       font-weight: bold;
+     }
+   </style>
+ </head>
+ <body>
+ 
+ <div class="container">
+   <form id="selectionForm" onsubmit="submitForm(event)">
+     <!-- Resume PDF Uploader -->
+     <div class="section">
+       <label for="resume">Upload Resume (PDF):</label>
+       <input type="file" id="resume" name="resume" accept="application/pdf" required>
+     </div>
+ 
+     <!-- Course Selection -->
+     <div class="section">
+       <label for="course">Select Course:</label>
+       <select id="course" name="course" required>
+         <option value="">Select Course</option>
+         <option value="MSML">MSML</option>
+         <option value="DATA">DATA</option>
+         <option value="CMSC">CMSC</option>
+         <option value="ENEE">ENEE</option>
+         <option value="MATH">MATH</option>
+       </select>
+     </div>
+ 
+     <!-- Term Selection -->
+     <div class="section">
+       <label for="term">Select Term:</label>
+       <select id="term" name="term" required>
+         <option value="">Select Term</option>
+         <option value="spring2024">Spring 2024</option>
+         <option value="winter2024">Winter 2024</option>
+         <option value="spring2025">Spring 2025</option>
+         <option value="summer2025">Summer 2025</option>
+       </select>
+     </div>
+ 
+     <!-- Level Selector -->
+     <div class="section">
+       <label for="level">Select Level:</label>
+       <select id="level" name="level" required>
+         <option value="">Select Level</option>
+         <option value="all">All</option>
+         <option value="undergraduate">Undergraduate</option>
+         <option value="graduate">Graduate</option>
+       </select>
+     </div>
+ 
+     <!-- Submit Button -->
+     <button type="submit">Submit</button>
+   </form>
+ 
+   <!-- Loading Indicator -->
+   <div id="loading" class="loading">Loading, please wait...</div>
+ </div>
+ 
+ <script>
+   function submitForm(event) {
+     event.preventDefault(); // Prevent form from submitting traditionally
+ 
+     // Display the loading indicator
+     document.getElementById("loading").style.display = "block";
+ 
+     // Collect form data
+     const formData = new FormData(document.getElementById("selectionForm"));
+     const resumeFile = formData.get("resume");
+     const course = formData.get("course");
+     const term = formData.get("term");
+     const level = formData.get("level");
+ 
+     // Simulate a backend call to process the form data
+     setTimeout(() => {
+       document.getElementById("loading").style.display = "none";
+       alert(`Selections submitted:\nCourse: ${course}\nTerm: ${term}\nLevel: ${level}\nResume: ${resumeFile.name}`);
+       
+       // Pass data to another function for further processing (like sending to backend)
+       processSubmission(course, term, level, resumeFile);
+     }, 3000); // 3-second delay to simulate processing time
+   }
+ 
+   function processSubmission(course, term, level, resumeFile) {
+     // This is where you would handle the backend logic
+     console.log("Data submitted:", { course, term, level, resumeFile });
+     // Replace this console.log with the actual code to process the submission
+   }
+ </script>
+ 
+ </body>
+ </html>
+ 

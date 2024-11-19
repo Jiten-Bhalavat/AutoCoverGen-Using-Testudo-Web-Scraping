@@ -1,0 +1,132 @@
+[
+    {
+        "course_id": "DATA100",
+        "course_title": "Elementary Statistics and Probability",
+        "description": "Simplest tests of statistical hypotheses; applications to before-and-after and matched pair studies. Events, probability, combinations, independence. Binomial probabilities, confidence limits. Random variables, expected values, median, variance. Tests based on ranks. Law of large numbers, normal approximation. Estimates of mean and variance.",
+        "professors": [
+            "Matthew Griffin",
+            "Clarke Safsten"
+        ]
+    },
+    {
+        "course_id": "DATA110",
+        "course_title": "Applications of R for Data Science",
+        "description": "Intended to prepare students for subsequent courses requiring computation with R, providing powerful and easy to use tools for statistical data analysis. Covers basics of R and R Studio including file handling, data simulation, graphical displays, vector and function operations, probability distributions, and inferential techniques for data analysis.",
+        "professors": [
+            "Susan Mazzullo"
+        ]
+    },
+    {
+        "course_id": "DATA120",
+        "course_title": "Python Programming for Data Science",
+        "description": "An introduction to programming in Python language, using Jupyter Notebooks and Python scripts. Covers variables, conditionals, loops, functions, lists, strings, tuples, sets, dictionaries, files and visualization.",
+        "professors": [
+            "Fardina Alam"
+        ]
+    },
+    {
+        "course_id": "DATA200",
+        "course_title": "Knowledge in Society: Science, Data and Ethics",
+        "description": "An introduction to the fundamental concepts and principles that govern ethical data collection, analysis, and usage. Students will explore various methods of data collection and gain an understanding of the ethical implications associated with each approach. Key topics include data ownership, data privacy, data anonymity, and data validity, providing students with a solid foundation in ethical data practices.",
+        "professors": [
+            "Fardina Alam"
+        ]
+    },
+    {
+        "course_id": "DATA250",
+        "course_title": "Discrete Mathematics",
+        "description": "Introduction to basic discrete mathematical and linear algebraic structures and use of these mathematical structures to solve programming problems. Logic, set theory, formal proof methodology, functions, combinatorics, advanced counting techniques,  and elements of linear algebra.",
+        "professors": [
+            "Todd Rowland"
+        ]
+    },
+    {
+        "course_id": "DATA320",
+        "course_title": "Introduction to Data Science",
+        "description": "An introduction to data science i.e., the end-to-end process of going from unstructured, messy data to knowledge and actionable insights. Provides a broad overview of several topics including statistical data analysis, basic data mining and machine learning algorithms, large-scale data management, cloud computing, and information visualization.",
+        "professors": [
+            "Maksym Morawski",
+            "Fardina Alam"
+        ]
+    },
+    {
+        "course_id": "DATA350",
+        "course_title": "Data Visualization and Presentation",
+        "description": "Introduction to effective and intuitive visual representations of data, including customizing graphics, plotting arrays, statistical graphics, and representing time series.",
+        "professors": [
+            "Vincent Lyzinski"
+        ]
+    },
+    {
+        "course_id": "DATA400",
+        "course_title": "Applied Probability and Statistics I",
+        "description": "Random variables, standard distributions, moments, law of large numbers and central limit theorem. Sampling methods, estimation of parameters, testing of hypotheses.",
+        "professors": [
+            "Mestiyage Gunatilleka",
+            "Sana Jahedi",
+            "Jonathan Fernandes"
+        ]
+    },
+    {
+        "course_id": "DATA601",
+        "course_title": "Probability and Statistics",
+        "description": "Provides a solid understanding of the fundamental concepts of probability theory and statistics. The course covers the basic probabilistic concepts such as probability space, random variables and vectors, expectation, covariance, correlation, probability distribution functions, etc. Important classes of discrete and continuous random variables, their inter-relation, and relevance to applications are discussed. Conditional probabilities, the Bayes formula, and properties of jointly distributed random variables are covered. Limit theorems, which investigate the behavior of a sum of a large number of random variables, are discussed. The main concepts random processes are then introduced. The latter part of the course concerns the basic problems of mathematical statistics, in particular, point and interval estimation and hypothesis testing.",
+        "professors": [
+            "Leonid Koralov"
+        ]
+    },
+    {
+        "course_id": "DATA602",
+        "course_title": "Principles of Data Science",
+        "description": "An introduction to the data science pipeline, i.e., the end-to-end process of going from unstructured, messy data to knowledge and actionable insights. Provides a broad overview of what data science means and systems and tools commonly used for data science, and illustrates the principles of data science through several case studies.",
+        "professors": [
+            "Marco Macias Sevde"
+        ]
+    },
+    {
+        "course_id": "DATA603",
+        "course_title": "Principles of Machine Learning",
+        "description": "A broad introduction to machine learning and statistical pattern recognition. Topics include: Supervised learning: Bayes decision theory, discriminant functions, maximum likelihood estimation, nearest neighbor rule, linear discriminant analysis, support vector machines, neural networks, deep learning networks. Unsupervised learning: clustering, dimensionality reduction, PCA, auto-encoders. The course will also discuss recent applications of machine learning, such as computer vision, data mining, autonomous navigation, and speech recognition.",
+        "professors": [
+            "Babak Azimi-Sadjadi"
+        ]
+    },
+    {
+        "course_id": "DATA604",
+        "course_title": "Data Representation and Modeling",
+        "description": "An introductory course connecting students to the most recent developments in the field of data science. It covers several fundamental mathematical concepts which form the foundations of Big Data theory. Among the topics included are Principal Component Analysis, metric learning and nearest neighbor search, elementary spectral graph theory, minimum and maximum graph cuts, graph partitions, Laplacian Eigenmaps, manifold learning and dimension reduction concepts, clustering and classification techniques such as k-means, kernel methods, Mercer's theorem, and Support Vector Machines. Some relevant concepts from geometry and topology will be also covered.",
+        "professors": [
+            "Instructor: TBA",
+            "Wojciech Czaja",
+            "Kendall Williams",
+            "Mestiyage Gunatilleka"
+        ]
+    },
+    {
+        "course_id": "DATA605",
+        "course_title": "Big Data Systems",
+        "description": "An overview of data management systems for performing data science on large volumes of data, including relational databases, and NoSQL systems. The topics covered include: different types of data management systems, their pros and cons, how and when to use those systems, and best practices for data modeling.",
+        "professors": [
+            "Tammy Perrin",
+            "Giacinto Paolo Saggese"
+        ]
+    },
+    {
+        "course_id": "DATA606",
+        "course_title": "Algorithms for Data Science",
+        "description": "Provides an in-depth understanding of some of the key data structures and algorithms essential for advanced data science. Topics include random sampling, graph algorithms, network science, data streams, and optimization.",
+        "professors": [
+            "Mohammad Nayeem Teli",
+            "Abdirisak Mohamed",
+            "Naeemul Hassan"
+        ]
+    },
+    {
+        "course_id": "DATA641",
+        "course_title": "Natural Language Processing",
+        "description": "Introduces fundamental concepts and techniques involved in getting computers to deal more intelligently with human language. Focused primarily on text (as opposed to speech), the class will offer a grounding in core NLP methods for text processing (such as lexical analysis, sequential tagging, syntactic parsing, semantic representations, text classification, unsupervised discovery of latent structure),  key ideas in the application of deep learning to language tasks, and consideration of the role of language technology in modern society.",
+        "professors": [
+            "Shabnam Tafreshi"
+        ]
+    }
+]
